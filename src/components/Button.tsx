@@ -1,16 +1,18 @@
+import React from "react";
+import { FC } from "react";
+import "./style/Button.css";
 
 type ButtonProps = {
-    text: string
-    color: string
-}
+  text: string;
+};
 
-const Button = (props: ButtonProps) => {
+const Button: FC<ButtonProps> = ({ text }) => {
   return (
-    <div >
-      {props.color}
-      {props.text}
-    </div>
+    <button >
+      {text}
+    </button>
   );
 };
 
 export default Button;
+

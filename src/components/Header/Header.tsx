@@ -2,10 +2,13 @@ import "./Header.scss";
 
 function Header() {
   return (
-    <header className="bg-gradient-to-r from-fuchsia-600 to-purple-600 text-white text-7xl font-black tracking-wider text-shadow-lg p-5 flex justify-center">
-      <h1 className="animate-pulse">Header</h1>
+    <header className="bg-slate-700 md:bg-pink-600 p-5 text-white text-5xl font-extralight  text-center">
+      Header
     </header>
   );
 }
 
 export default Header;
+
+// library - ספריה
+// framework - ספריית על

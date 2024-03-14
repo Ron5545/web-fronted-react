@@ -7,18 +7,15 @@ import Spinners from "./components/Spinners";
 
 function App() {
   return (
-    <main>
+    <div>
+      <Button color="red" text="Hi"/>
+      <Spinners />
+      <About />
       <Header />
-      <div className="flex flex-col items-center gap-10">
-        <Button color="red" text="Hi" />
-        <Spinners />
-        <About />
-        <Counter />
-        <h1 className="text-4xl font-bold">Hello World</h1>
-      </div>
-    </main>
+      <Counter />
+      <h1>Hello World</h1>
+    </div>
   );
 }
 
 export default App;
-
