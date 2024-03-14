@@ -1,13 +1,15 @@
 {
     "compilerOptions": {
+        "moduleResolution": "node",
         "module": "commonjs",
-        "target": "ES2023",
+        "target": "esnext",
         "noImplicitAny": true,
         "removeComments": true,
         "preserveConstEnums": true,
         "sourceMap": true,
         "outDir": "built/local",
-        "rootDir": "src"
+        "rootDir": "src",
+        "esModuleInterop": true
     },
     "files": [
         "core.ts",
