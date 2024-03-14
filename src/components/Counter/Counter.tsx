@@ -1,22 +1,23 @@
 import { useState } from "react";
-
+import '../styles/Counter.scss';
 function Counter() {
   const [x, setX] = useState(0);
 
+  const handleIncrement = () => {
+    setX((prevX) => prevX + 1);
+  };
+
+  const handleDecrement = () => {
+    setX((prevX) => prevX - 1);
+  };
+
   return (
-    <div className="flex flex-col items-center">
-      <button
-        onClick={() => setX(x + 1)}
-        className="bg-purple-400 p-5 rounded-xl text-white text-2xl"
-      >
+    <div className="counter">
+      <button onClick={handleIncrement} className="increment-button">
         +
       </button>
-      <p>{x}</p>
-      <button
-        onClick={() => setX(x - 1)}
-      
-        className="bg-purple-400 p-5 rounded-xl text-white text-2xl"
-      >
+      <p className="count">{x}</p>
+      <button onClick={handleDecrement} className="decrement-button">
         -
       </button>
     </div>
@@ -24,3 +25,4 @@ function Counter() {
 }
 
 export default Counter;
+
